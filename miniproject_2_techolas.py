@@ -374,14 +374,14 @@ best_model3.score(x_test,y3_test)
 # In[68]:
 
 
-import joblib
+import pickle
 
 
 # In[70]:
 
 
 #save the model as a pickle in the file
-joblib.dump(best_model3,'saved_model.pkl')
+pickle.dump(best_model3,open('saved_model.ipynb','wb'))
 
 
 # In[ ]:
